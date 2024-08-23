@@ -24,6 +24,16 @@ A serverless architecture — also known as serverless computing or function as 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+### Performance
+
+#### Monolith
+In the event of a performance problem, you may be able to scale the entire monolithic service. All services rely on a single database. You can begin by optimizing your database queries or by using read replicas. This type of optimization, however, has a limit.
+
+#### Serverless
+When functions are called after an extended period of inactivity, cold starts, which are frequent in serverless setups, cause code execution to pause for many seconds. Max run time — for example, an AWS Lambda function can take/run at least 15m for each execution.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Ease of Development and Debugging
 
 #### Monolith
@@ -70,7 +80,23 @@ A cloud provider might run code from a few of its clients simultaneously on the 
 ### Control
 
 #### Monolith
-All of the data lies in the personal database and servers, hence the flow of data can be controlled according to the needs of the developers.
+All of the data is stored in the personal database and servers, hence the flow of data can be controlled according to the needs of the developers. The power to make changes to the system architecture is possible and the ability to control the dataflow of the entire system is enjoyed by the developers.
 
 #### Serverless
 You have no control over the software stack that your code uses in serverless settings. You must rely on a cloud provider to resolve any problems that affect one of your servers due to hardware failure, data center outage, or other problems. Big cloud providers like AWS provide a variety of services, including APIs, messaging queues, and databases, which can all be used together to build serverless applications. Although components from several vendors can be combined, services from a single provider are made to integrate most easily. So, you are directly or indirectly forced to lay all the important data of your product into the hands of large capitalist firms and companies without any further control of it.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Conclusion
+
+There is no correct choice of architecture for every application created. The need for products vary with the difference in the task to be performed by the software, the expectations of the developers, and the user base of the product.
+However, monolithic architecture seems to be ideal for small applications due to its rapid development, ease of testing and debugging, and low cost. So, it seems to be a great fit for building MVPs and releasing beta products for testing out the needs of the interested user base.
+While serverless architecture is a terrific tool for businesses looking to speed up time to market and create scalable, lightweight apps.
+In fact, in a real-world scenario hybrid architectures are becoming increasingly popular for their adaptability with the serverless system and developer control over important data.
+
+In a hybrid architecture, developers might use monolith or microservices to handle the majority of requests but delegate some quick-turnaround jobs, such as database storage, to serverless activities.
+
+> Microservices are all-in-one apps that have been broken down into smaller chunks.
+> Microservices are an architectural pattern that arranges an application as a collection of loosely coupled, fine-grained services, communicating through lightweight protocols. This is different from a monolith, which is an application written in one language and operated together as one unit of code.
+
+=============================================================================================================================================================================
