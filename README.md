@@ -11,6 +11,8 @@ There are different ways of building applications and there isn't any perfect wa
 
 
 ### Architecture
+
+--------------------
 #### Monolith
 ![Monolith architecture diagram](https://res.cloudinary.com/practicaldev/image/fetch/s--DLcP9_Fn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w9jf2w448vgnued8pt23.png)
 
@@ -24,6 +26,7 @@ A serverless architecture — also known as serverless computing or function as 
 
 
 ### Ease of Development and Debugging
+-----------------------------------------
 #### Monolith
 The monolithic structure is easier to build as a beginner because of the presence of a central location for all the source code which makes it easy to understand.
 But as the project grows it gets tougher to manage the codebase as there is a lack of any proper boundary between tasks allocated to modules, thus for a new team of developers coming in, it can turn into quite a headache to familiarise with the codebase and identify the bugs and other issues as they are. Faster development than a custom-developed microservices architecture, but may or may not be faster than a serverless architecture.
@@ -34,3 +37,5 @@ Fast development because less configuration is needed.  No infrastructure or OS 
 
 
 ### Cost
+
+--------------
