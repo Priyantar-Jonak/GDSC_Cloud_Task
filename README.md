@@ -98,5 +98,3 @@ In a hybrid architecture, developers might use monolith or microservices to hand
 
 > Microservices are all-in-one apps that have been broken down into smaller chunks.
 > Microservices are an architectural pattern that arranges an application as a collection of loosely coupled, fine-grained services, communicating through lightweight protocols. This is different from a monolith, which is an application written in one language and operated together as one unit of code.
-
-=============================================================================================================================================================================
